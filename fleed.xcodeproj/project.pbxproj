@@ -27,6 +27,7 @@
 		8289CE8822BD25DD007FA8DD /* KeySignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289CE8722BD25DD007FA8DD /* KeySignature.swift */; };
 		8289CE8A22BD2985007FA8DD /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289CE8922BD2985007FA8DD /* Line.swift */; };
 		828C9C7322C4133200D8A0D7 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828C9C7222C4133200D8A0D7 /* Functions.swift */; };
+		8299D0F222CE9157002AC901 /* StaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299D0F122CE9157002AC901 /* StaffView.swift */; };
 		82B3B6BE22C2C04900AE76A7 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B3B6BD22C2C04900AE76A7 /* FunctionsTests.swift */; };
 		82FC3DB622BDF10D00DFE470 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FC3DB522BDF10D00DFE470 /* Bar.swift */; };
 		82FC3DB822BDF18C00DFE470 /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FC3DB722BDF18C00DFE470 /* TimeSignature.swift */; };
@@ -67,6 +68,7 @@
 		8289CE8722BD25DD007FA8DD /* KeySignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeySignature.swift; sourceTree = "<group>"; };
 		8289CE8922BD2985007FA8DD /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		828C9C7222C4133200D8A0D7 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		8299D0F122CE9157002AC901 /* StaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffView.swift; sourceTree = "<group>"; };
 		82B3B6BD22C2C04900AE76A7 /* FunctionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsTests.swift; sourceTree = "<group>"; };
 		82FC3DB522BDF10D00DFE470 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 		82FC3DB722BDF18C00DFE470 /* TimeSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignature.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		8289CE7A22BC134B007FA8DD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8299D0F122CE9157002AC901 /* StaffView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				8289CE7F22BC134B007FA8DD /* Interval.swift in Sources */,
 				8289CE8A22BD2985007FA8DD /* Line.swift in Sources */,
 				8289CE7C22BC134B007FA8DD /* Clef.swift in Sources */,
+				8299D0F222CE9157002AC901 /* StaffView.swift in Sources */,
 				82FC3DB822BDF18C00DFE470 /* TimeSignature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
