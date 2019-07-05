@@ -8,13 +8,20 @@
 
 import UIKit
 
-class StaffView: UIView {
+@IBDesignable class StaffView: UIView {
+    
+    @IBInspectable var padding: CGFloat = 20
+    @IBInspectable var lineSpacing: Int = 10
 
     override func draw(_ rect: CGRect) {
         if let context = UIGraphicsGetCurrentContext() {
+            
+            for lineIndex in -2...2 {
+                context.move(to: CGPoint(x: padding, y: bounds.midY + CGFloat(lineIndex * lineSpacing)))
+                context.addLine(to: CGPoint(x: bounds.maxX - padding, y: bounds.midY + CGFloat(lineIndex * lineSpacing)))
+            }
+            
             context.setStrokeColor(#colorLiteral(red: 0.06274510175, green: 0, blue: 0.1921568662, alpha: 1))
-            context.move(to: CGPoint(x: 0, y: bounds.midY))
-            context.addLine(to: CGPoint(x: bounds.maxX, y: bounds.midY))
             context.strokePath()
         }
     }

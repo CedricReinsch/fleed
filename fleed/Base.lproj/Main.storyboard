@@ -18,14 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvv-8f-Sw2" customClass="StaffView" customModule="fleed" customModuleProvider="target">
-                                <rect key="frame" x="20" y="44" width="374" height="386"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvv-8f-Sw2" customClass="StaffView" customModule="fleed" customModuleProvider="target">
+                                <rect key="frame" x="20" y="44" width="374" height="231"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wvv-8f-Sw2" secondAttribute="height" multiplier="34:21" id="ehk-D5-F2x"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSpacing">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ib-0u-fRS">
-                                <rect key="frame" x="20" y="832" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ib-0u-fRS">
+                                <rect key="frame" x="190" y="283" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startOrStopExercise:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pas-8q-WdS"/>
@@ -33,6 +42,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wvv-8f-Sw2" secondAttribute="trailing" constant="20" id="SMR-Si-a2p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wvv-8f-Sw2" secondAttribute="bottom" constant="587" id="V7x-sx-wuz"/>
+                            <constraint firstItem="1ib-0u-fRS" firstAttribute="top" secondItem="wvv-8f-Sw2" secondAttribute="bottom" constant="8" id="bvU-kD-cWT"/>
+                            <constraint firstItem="wvv-8f-Sw2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dJa-di-Lp2"/>
+                            <constraint firstItem="1ib-0u-fRS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hQT-RO-8l2"/>
+                            <constraint firstItem="wvv-8f-Sw2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xxG-uq-hgQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
